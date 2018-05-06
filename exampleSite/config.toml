@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "id"
+title = "Seminyak"
+theme = "seminyak"
+
+[params]
+  theme_color = "#fffdc3"
+  referrer_policy = "same-origin"

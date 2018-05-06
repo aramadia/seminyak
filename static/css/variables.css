@@ -1,0 +1,13 @@
+:root {
+  --body-background-image: url("/images/chema-photo-498926-unsplash.jpg");
+  --body-background-position: center center;
+  --body-background-color: #999;
+  --body-background-size: cover;
+  --body-background-attachment: fixed;
+  --body-background-repeat: no-repeat;
+  --message-background-color: #fffcba24;
+  --message-header-color: #ffffff;
+  --message-paragraph-color: #fffdc3;
+  --message-link-color: #ffffff;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}

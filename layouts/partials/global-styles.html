@@ -1,0 +1,47 @@
+<style>
+  @import "/css/variables.css" screen;
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+		background-image: var(--body-background-image);
+		background-position: var(--body-background-position);
+		background-repeat: var(--body-background-repeat);
+		background-attachment: var(--body-background-attachment);
+		background-size: var(--body-background-size);
+    background-color: var(--body-background-color);
+    font-family: var(--font-family);
+  }
+
+  div, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .message {
+    box-sizing: border-box;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    background-color: var(--message-background-color);
+    color: var(--message-paragraph-color);
+    padding-left: 1.5rem;
+  }
+
+  .message h1 {
+    color: var(--message-header-color);
+  }
+
+  .message a {
+    color: var(--message-link-color);
+  }
+</style>
