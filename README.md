@@ -2,10 +2,6 @@
 
 Really, really, really ridiculously good looking splash page for Hugo.
 
-## Screenshot
-
-![Screenshot of Seminyak theme for Hugo](https://github.com/comfusion/seminyak/blob/master/images/screenshot.png?raw=true)
-
 ## Installation
 
 - Copy theme to your site's themes folder.
