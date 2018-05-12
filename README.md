@@ -10,26 +10,27 @@ Really, really, really ridiculously good looking splash page for Hugo.
 
 ## Features
 
-- Set your own background image
-- Modify header and message
-- Tweak style treatments
+- Customizable full-screen background image
+- Choose from 1 of 10 predefined color palettes
+- Create your own color palette with [Tailwind](https://tailwindcss.com/)
+- Add custom Web Fonts from Google
+- Easily add your own scripts and favicon
+- Optional image credits display
 - Google Analytics using Hugo's internal template
 - Open Graph using Hugo's internal template
-- RSS using Hugo's internal template
-- Overrides for scripts, favicon and analytics
-- Native System Font Stack
-- Referrer Policy
-- Webmaster Verification
+- RSS using Hugo's internal template (just in case)
+- Add privacy with Referrer Policy
+- Webmaster Verification ready
 
 ## Customization
 
-### Header and Message
+## Updating the Web Font
 
-To customize the header and message create a `_index.md` at the root of your site's `/content/` directory. Set the `title` in the front matter to define the header text then use HTML or Markdown below the front matter to define the message. See `exampleSite` for example.
+To update the Web Font update `google_fonts` in the config file and adjust settings in `tailwind.custom.js` then run `npm run build` to generate a new stylesheet.
 
-### Style
+### Modify the Color Palette
 
-Seminyak uses [CSS Variables](https://devdocs.io/css/using_css_variables) for customization of basic elements. To start customizing copy the theme's `variables.css` into your `/static/css/` directory and have at it.
+To adjust the color palette adjust the color setting for `color_palette` in the site config. To create your own color palette modify `tailwind-custom.js` and run `npm run build` from the theme directory. See the [Tailwind docs](https://tailwindcss.com/docs/colors#customizing) for more info.
 
 ### Configuration
 
@@ -39,8 +40,11 @@ Just the basics. Add to your site configuration.
 googleAnalytics = "UA-123-45" # Optional, enable Google Analytics
 
 [params]
-  theme_color = "#fffdc3"; # Optional, theme-color meta tag
+  color_palette = "yellow" # Adjusts theme color
+  theme_color = "#fffdc3" # Optional, theme-color meta tag
   referrer_policy = "same-origin" # Optional, referrer policy meta tag
+  background_image_url = "https://source.unsplash.com/ZJqO6ddBpic/" # Optional, background image
+  google_fonts = "Oswald|Raleway" # Passed to Google for Web Font
 
 [params.webmaster]
   google = "" # Optional, Google verification code
