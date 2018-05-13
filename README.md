@@ -11,8 +11,8 @@ Really, really, really ridiculously good looking splash page for Hugo.
 ## Features
 
 - Customizable full-screen background image
-- Choose from 1 of 10 predefined color palettes
-- Create your own color palette with [Tailwind](https://tailwindcss.com/)
+- Choose from 1 of 10 [predefined color palettes](https://tailwindcss.com/docs/colors/#default-color-palette)
+- [Create your own](https://tailwindcss.com/docs/colors#customizing) color palette with Tailwind
 - Add custom Web Fonts from Google
 - Easily add your own scripts and favicon
 - Optional image credits display
@@ -24,13 +24,13 @@ Really, really, really ridiculously good looking splash page for Hugo.
 
 ## Customization
 
-## Updating the Web Font
+### Customizing the Web Font
 
-To update the Web Font update `google_fonts` in the config file and adjust settings in `tailwind.custom.js` then run `npm run build` to generate a new stylesheet.
+To update the Web Font update `google_fonts` in the config file and adjust settings in `tailwind-custom.js` then run `npm run build` to generate a new stylesheet.
 
 ### Modify the Color Palette
 
-To adjust the color palette adjust the color setting for `color_palette` in the site config. To create your own color palette modify `tailwind-custom.js` and run `npm run build` from the theme directory. See the [Tailwind docs](https://tailwindcss.com/docs/colors#customizing) for more info.
+To adjust the color palette adjust the color setting for `color_palette` in the site config. To create your own color palette modify `tailwind-custom.js` and run `npm run build` from the theme directory. See [Coolors](https://coolors.co/) for color schemes and the [Tailwind docs](https://tailwindcss.com/docs/colors#customizing) for how to customize.
 
 ### Configuration
 
@@ -40,7 +40,7 @@ Just the basics. Add to your site configuration.
 googleAnalytics = "UA-123-45" # Optional, enable Google Analytics
 
 [params]
-  color_palette = "yellow" # Adjusts theme color
+  color_palette = "yellow" # Required, adjusts color palette
   theme_color = "#fffdc3" # Optional, theme-color meta tag
   referrer_policy = "same-origin" # Optional, referrer policy meta tag
   background_image_url = "https://source.unsplash.com/ZJqO6ddBpic/" # Optional, background image
@@ -52,6 +52,8 @@ googleAnalytics = "UA-123-45" # Optional, enable Google Analytics
   alexa = "" # Optional, Alexa verification code
   yandex = "" # Optional, Yandex verification code
 ```
+
+See the [Hugo docs](https://gohugo.io/getting-started/configuration/) for additional configuration options.
 
 ### Favicon
 
